@@ -1,17 +1,16 @@
-import './globals.css';
-import '@rainbow-me/rainbowkit/styles.css';
-import { Inter } from 'next/font/google';
-import Wrapper from '@/components/Wrapper';
-import Link from 'next/link';
-import Header from '@/components/Header';
-import Balance from '@/components/Balance';
+import './globals.css'
+import '@rainbow-me/rainbowkit/styles.css'
+import { Inter } from 'next/font/google'
+import Wrapper from '@/components/Wrapper'
+import Link from 'next/link'
+import Header from '@/components/Header'
 
-const inter = Inter({ subsets: ['latin'] });
+const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
   title: 'NFT Marketplace',
   description: 'swap your NFTs',
-};
+}
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
@@ -32,10 +31,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <Header />
             </div>
           </nav>
-          <Balance />
           {children}
         </Wrapper>
       </body>
     </html>
-  );
+  )
 }
