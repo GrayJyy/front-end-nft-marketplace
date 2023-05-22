@@ -4,6 +4,7 @@ import { Inter } from 'next/font/google';
 import Wrapper from '@/components/Wrapper';
 import Link from 'next/link';
 import Header from '@/components/Header';
+import Balance from '@/components/Balance';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -31,6 +32,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <Header />
             </div>
           </nav>
+          <Balance />
           {children}
         </Wrapper>
       </body>
